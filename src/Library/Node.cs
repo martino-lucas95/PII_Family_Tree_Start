@@ -4,11 +4,14 @@ using System;
 
 namespace Library
 {
-    public class Node
+    public class Node: Visitor
     {
         private int number;
-
+        private string name;
+        private int age;
         private List<Node> children = new List<Node>();
+
+        
 
         public int Number {
             get
@@ -32,6 +35,10 @@ namespace Library
         public void AddChildren(Node n)
         {
             this.children.Add(n);
+        }
+
+        public void Accept(Visitor visitor){
+            visitor.Visit(this);
         }
         
     }

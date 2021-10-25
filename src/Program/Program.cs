@@ -24,6 +24,16 @@ namespace Program
             n3.AddChildren(n6);
             n3.AddChildren(n7);
 
+            Person Rosa = new Person("Rosa", 87);
+            Person Luis = new Person("Luis", 90);
+            Person Daniel  = new Person("Daniel", 65);
+            Person Cecilia = new Person("Cecilia", 65);
+            Person Lucas = new Person("Lucas", 26);
+            Person Agustina = new Person("Agustina", 27);
+            Person Maria_Paz = new Person("Maria Paz",5);
+            Person Antonio = new Person("Antonio",10);         
+
+
             // visitar el árbol aquí
         }
     }
